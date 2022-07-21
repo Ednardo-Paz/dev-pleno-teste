@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+html,
+body {
+  position: relative;
+  background-color: #434343;
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Primeira section */
+.container {
+  scroll-behavior: smooth;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.main-bg {
+  height: 100vh;
+  background-image: url('../src/assets/mainImg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.intro h1 {
+  margin-top: 30px;
+  font-size: 46px;
+  color: #4d6128;
+}
+
+.intro p {
+  font-size: 20px;
+}
+
+#imgArrow {
+  width: 40px;
+  margin-top: 30px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  background-color: #434343c9 !important;
+  max-width: 1360px;
+  position: relative;
+  margin: 0 auto;
+  bottom: 60px !important;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.swiper-pagination-bullet {
+  width: 32px !important;
+  height: 32px !important;
+  background-color: #fff !important;
+  opacity: 2 !important;
+  border: 5px solid #323232;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4d6128 !important;
+  border: 6px solid #fff;
+}
+
+/* Segunda secton  */
+.carousel-grid {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.carousel-gridImg {
+  width: 50px;
+}
+
+.arrowCarousel {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 95px;
+  position: relative;
+  bottom: 280px;
+}
+
+.carousel {
+  margin-left: 5px;
+  width: 300px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  border: 6px solid #707070;
+}
+
+.carousel p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px !important;
+  margin: 0px 90px !important;
+}
+
+/* Terceira section */
+.grid-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #707070;
+  padding: 30px;
+  gap: 50px;
+}
+
+.grid-img-text h2 {
+  font-size: 34px;
+}
+
+
+.grid-img-text img {
+  max-width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: 13px solid #323232;
+}
+
+.grid-text {
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+}
+
+/* Quarta section */
+.acordion-section {
+  background-color: #bfbfbf;
+}
+
+.acordion-container {
+  padding: 30px 45px;
+}
+
+.accordion {
+  background-color: #707070;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: 1px solid #ffffff45;
+}
+
+.active,
+.accordion:hover {
+  background-color: #fff;
+  color: #707070;
+}
+
+.btn-text-acordion {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.accordion:after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 15px;
+  background-image: url(../src/assets/arrowDown.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: right;
+}
+
+.active:after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 15px;
+  background-image: url(../src/assets/arrowUp.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: right;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.grid-panel {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.panel img {
+  max-width: 310px;
+  border: 6px solid #707070;
+}
+
+.panel p {
+  max-width: calc(100% - 310px);
+  color: #707070;
+}
+
+/* Quinta section */
+.form-section {
+  background: linear-gradient(161deg, #707070 0%, #707070 50%, #434343 50%, #434343 100%);
+  width: 100%;
+  padding: 30px 45px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.email-tel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.form-group {
+  padding: 20px;
+  background-color: #bfbfbf;
+  width: 100%;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+}
+
+footer {
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section {
+  color: #fff;
+  padding: 20px;
+}
+
+input {
+  width: 90%;
+  background-color: #bfbfbf;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+textarea {
+  width: 90%;
+  background-color: #bfbfbf;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+@media (max-width: 640px) {
+  .main-bg {
+    height: 352px;
+    background-size: 400px 231px, cover;
+    background-position: bottom;
+    color: #fff;
+  }
+
+  .intro h1 {
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .intro p {
+    max-width: 200px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #imgArrow {
+    width: 30px;
+    margin-top: 30px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px !important;
+    height: 50px;
+  }
+
+  .grid-img-text img {
+    max-height: 300px;
+    width: 300px;
+  }
+
+  .grid-panel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .panel p {
+    max-width: initial;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .form {
+    gap: 5px;
+  }
+
+  .form-section {
+    padding: 10px 5px;
+  }
+
+  .email-tel {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .form-section {
+    background: linear-gradient(129deg, #707070 0%, #707070 50%, #434343 50%, #434343 100%);
+  }
+}
+
+@media (max-width:1220px) {
+  .carousel {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .arrowCarousel {
+    bottom: 0;
+  }
+
+  .carousel p {
+    margin-bottom: 0;
+  }
+
+  .grid-img-text {
+    margin-top: 65px;
+  }
+
+  .grid-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .grid-img-text {
+    text-align: center;
+  }
+
+  .acordion-container {
+    padding: 10px 5px;
+  }
+}
